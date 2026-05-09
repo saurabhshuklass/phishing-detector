@@ -36,5 +36,10 @@ http://127.0.0.1:5001
 - Threat Scoring
 - Logging & Monitoring
 
+
+## 📷 Screenshots
+![Save](safe.png)
+![Malicious](malicious.png)
+
 ## 👨‍💻 Author
 Saurabh Shukla
