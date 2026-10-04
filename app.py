@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request
 import requests
 import base64
+import os
 
 app = Flask(__name__)
 
-API_KEY = "f396b31a40028850ef5295beb7a49a5f22a596790015ff0393b02b76118db239"
+API_KEY = os.getenv("VIRUSTOTAL_API_KEY")
 
 @app.route("/", methods=["GET", "POST"])
 def home():
@@ -48,4 +49,4 @@ def home():
     return render_template("index.html", result=result)
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    app.run(debug=True)
